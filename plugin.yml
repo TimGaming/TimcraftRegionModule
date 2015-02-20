@@ -1,0 +1,26 @@
+name: Timcraft Region Module
+main: com.turbogrimoire.purelysatanic.TimcraftRegionModule.RegionModulePlugin
+version: 2.1
+depend: [Vault]
+website: http://turbogrimoire.com
+author: Purely Satanic
+description: >
+             Unified Region Module by Purely Satanic
+             Vault'd by Nebual
+commands:
+  Protect:
+    aliases: [pr]
+    description: Protects the current worldedit selection - Costs money
+    usage: |
+           /<command> [regionname] [-c]
+  NameColor:
+    description:
+    usage: |
+           /<command> [colorname]
+  Expand:
+    description:
+    usage: |
+           /<command> [regionname] [amount] [direction] [-c]
+  RegionCleanup:
+    description: Removes old players from regions
+           

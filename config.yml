@@ -1,0 +1,9 @@
+Protection:
+  MaximumAwaitingProtections: 2
+  MinimumXLength: 10
+  MinimumZLength: 10
+  LowerYValue: 0
+  UpperYValue: 256
+  PricePerBlock: 10.00
+ChildProtection:
+  PricePerBlock: 5.00
