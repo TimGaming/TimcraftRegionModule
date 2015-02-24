@@ -103,14 +103,14 @@ public class ExpandCommand
       return true;
     }
     ProtectedRegion region = this.plugin.getWorldGuard().getRegionManager(player.getWorld()).getRegion(cleaned);
-    if (!region.isOwner(player.getName()))
+    if (!region.getOwners().contains(player.getUniqueId()))
     {
       MessageHandler.SendErrorMessage(Level.WARNING, this.plugin, player, "Sorry, you are not the owner of this protection.");
       
       return true;
     }
     ProtectedRegion parent = region.getParent();
-    if ((parent != null) && (!parent.isOwner(player.getName())))
+    if ((parent != null) && (!parent.getOwners().contains(player.getUniqueId())))
     {
       MessageHandler.SendErrorMessage(Level.WARNING, this.plugin, player, "Sorry, you are not the owner of the parent protection.");
       
